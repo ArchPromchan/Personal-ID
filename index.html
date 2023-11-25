@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <h1> 1. Implement a function that checks the correctness of the personal identity number.</h1> 
+        <h2> Input your birth date in DDMMYY form <br></br>
+             Follow with +/-/A, <br></br>
+             (+) If you were born in the 1800s, <br></br>
+             (-) If you were born in the 1900s<br></br>
+             (A) If you were born in the 2000s<br></br>
+             The next 3 numbers is the individual number, whicj\h is random between 002-899.<br></br>
+             If your gender are male, the individual number will be odd.<br></br>
+             If your gender are female, the individual number will be even.<br></br>
+             At the final character, it is the control character. <br></br>
+             It is established by dividing the nine-digit number consisting of a date of birth and individual number by 31. <br></br>
+             The control character is determined on the basis of the remainder. <br></br>
+             Below is the table of remainder and control character.
+        </h2>
+        <a href="https://ibb.co/LPBjFjn"><img src="https://i.ibb.co/QchSgSr/Screenshot-2023-11-25-155711.png" alt="table of remainder and control character" border="0"></a>        
+        <br></br>
+        Enter ID: 
+        <input type = "text" id="text" name="text" 
+        placeholder="Type The Personal Identity Number">
+        <br></br>
+        <input type="button" value="Check" onclick="cal()">
+                
+        <br></br>
+        Input:
+        <span id = "a"> </span>
+        <br></br>
+        Is valid:
+        <span id = "b"> </span>
+        
+        <br></br>
+        Sex:
+        <span id = "c"> </span>
+        
+        <br></br>
+        age: 
+        <span id = "d"> </span>
+        <br></br>
+        
+        <input type="button" value="More Specific Age" onclick="specificage()">
+        Specific Age:
+        
+        <br></br>
+        Year(s)= <span id = "Year"> </span>
+        <br></br>
+        Month(s)= <span id = "Month"> </span>
+        <br></br>
+        Day(s)= <span id = "Day"> </span>
+        <br></br>
+
+        <h1> 2. Make a function that creates an ID. The initial part of the parameter that is passed to the function.</h1> 
+        Enter ID (without control character): 
+        <input type = "text" id="text2" name="text2" 
+        placeholder="Type The Personal Identity Number">
+        <br></br>
+        <input type="button" value="Create" onclick="create()">
+        <br></br>
+        Input:
+        <span id = "f"> </span>
+        <br></br>
+        Output:
+        <span id = "g"> </span>
+    </body>
+    
+<script src="final Personal ID.js"></script>
+
+</html>
